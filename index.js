@@ -6,7 +6,8 @@ var app = express();
 // var mongo = mongo();
 
 //Chamada na porta 3000 para iniciar o servidor 
-app.listen(3000, () => {
+const port = process.env.PORT || 3000
+app.listen(port, () => {
  console.log("Server running on port 3000");
 }); 
 
